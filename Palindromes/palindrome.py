@@ -2,7 +2,7 @@
 import load_dictionary
 import save_file
 
-word_list = load_dictionary.load('2of12.txt')
+word_list = load_dictionary.load('slowa.txt')
 pail_list = []
 
 for word in word_list:
