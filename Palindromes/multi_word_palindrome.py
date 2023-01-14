@@ -1,6 +1,7 @@
 """Find all multi-word palindromes"""
 import time
 import load_dictionary
+import save_file
 
 word_list = load_dictionary.load('2of12.txt')
 
@@ -28,6 +29,8 @@ stat_time = time.time()
 
 multi_word_palindromes = find_multi_word_palindromes(word_list)
 multi_word_palindromes_sorted = sorted(multi_word_palindromes)
+
+save_file.save_multi('multi_word_palindromes.txt', multi_word_palindromes_sorted)
 
 print(f'Number of palindromes find: {len(multi_word_palindromes_sorted)}')
 for first, second in multi_word_palindromes_sorted:
